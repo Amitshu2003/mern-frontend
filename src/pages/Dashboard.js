@@ -30,7 +30,7 @@ function Dashboard() {
 
 
   async function populateUser() {
-    const req = await fetch("http://localhost:8000/api/quote", {
+    const req = await fetch("https://mern-amit2.herokuapp.com/api/quote", {
       headers: {
         "x-access-token": localStorage.getItem("token"),
       },
@@ -51,7 +51,7 @@ function Dashboard() {
   async function addUser(e) {
     e.preventDefault();
 
-    const req = await fetch("http://localhost:8000/api/quote", {
+    const req = await fetch("https://mern-amit2.herokuapp.com/api/quote", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -94,7 +94,7 @@ function Dashboard() {
 
   async function deletePeople(id){
   
-    const req = await fetch(`http://localhost:8000/api/quote/${id}`,{method:"DELETE", headers: {
+    const req = await fetch(`https://mern-amit2.herokuapp.com/api/quote/${id}`,{method:"DELETE", headers: {
       "Content-Type": "application/json",
       "x-access-token": localStorage.getItem("token"),
     }});

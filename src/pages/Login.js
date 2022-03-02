@@ -7,7 +7,7 @@ function App() {
   async function loginUser(e){
     e.preventDefault();
 
-    const response = await fetch("http://localhost:8000/api/login",{
+    const response = await fetch("https://mern-amit2.herokuapp.com/api/login",{
       method:'POST',
       headers:{
         'Content-Type':'application/json',
