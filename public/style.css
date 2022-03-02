@@ -1,0 +1,29 @@
+h1 {
+  padding-top: 20px;
+}
+
+.user:nth-child(2n) {
+  background-color: gray;
+  color:white
+}
+
+span {
+  padding: 4px 7px;
+}
+
+
+.login{
+ text-align: center;
+}
+
+.login input{
+  margin: 6px;
+  padding: 4px;
+}
+
+
+
+.user{
+  padding: 4px;
+  margin: 4px;
+}
